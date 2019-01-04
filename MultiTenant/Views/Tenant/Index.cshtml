@@ -1,0 +1,17 @@
+﻿@model List<MultiTenant.Models.Tenant>
+<h1>List of Tenants</h1>
+<ul>
+    @foreach (var tenant in Model)
+    {
+        <li>
+            @tenant.Name
+        </li>
+        <li>
+            @tenant.DomainName
+        </li>
+        <li>
+            @tenant.Default
+        </li>
+    }
+
+</ul>
